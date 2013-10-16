@@ -21,9 +21,29 @@ public class MigrationLogic {
     public String migrateCompilationUnitToLombok(CompilationUnit compilationUnit, String code){
         GenericVisitor<Object,Object> visitor = new GenericVisitorAdapter<Object, Object>() {
 
+            private boolean isAGetter(MethodDeclaration methodDeclaration){
+                if (!methodDeclaration.getName().startsWith("get")){
+                     return false;
+                }
+                return true;
+            }
+
+            private boolean isASetter(MethodDeclaration methodDeclaration){
+                if (!methodDeclaration.getName().startsWith("set")){
+                    return false;
+                }
+                return true;
+            }
+
             @Override
             public Object visit(MethodDeclaration methodDeclaration, Object o) {
                 System.out.println("Visiting "+methodDeclaration);
+                System.out.println("\tname: "+methodDeclaration.getName());
+                if (isAGetter(methodDeclaration)){
+
+                } else if (isASetter(methodDeclaration)){
+
+                }
                 return null;  //To change body of implemented methods use File | Settings | File Templates.
             }
 
