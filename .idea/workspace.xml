@@ -2,17 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bff9fb56-d14d-48d5-94a8-131451166ab9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/AstElementRecognizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/CombinedAstElementRecognizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/GetterElementRecognizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/LombokTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/NamePrefixMethodDeclarationRecognizer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/RefactoringInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lombok.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/it/polito/softeng/MigrationLogic.java" afterPath="$PROJECT_DIR$/src/it/polito/softeng/MigrationLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/MigrationLogicTest.java" afterPath="$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/MigrationLogicTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lombok-migrator.iml" afterPath="$PROJECT_DIR$/lombok-migrator.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lombok-migrator.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1381950664886" ignored="false" />
+    <file path="/Dummy.txt" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382014102667" ignored="false" />
     <file path="/LombokMigrator.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1380881431876" ignored="false" />
     <file path="/FileUtils.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1380880414878" ignored="false" />
-    <file path="/MigrationLogic.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1381951252289" ignored="false" />
-    <file path="/MigrationLogicTest.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1380881503324" ignored="false" />
-    <file path="/fragment.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1380880294777" ignored="false" />
+    <file path="/MigrationLogic.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382013709697" ignored="false" />
+    <file path="/MigrationLogicTest.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382012355285" ignored="false" />
+    <file path="/fragment.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382014253572" ignored="false" />
+    <file path="/AstElementRecognizer.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382004166759" ignored="false" />
+    <file path="/NamePrefixMethodDeclarationRecognizer.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382004322564" ignored="false" />
+    <file path="/CombinedAstElementRecognizer.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382004648615" ignored="false" />
+    <file path="/GetterElementRecognizer.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382004825431" ignored="false" />
+    <file path="/RefactoringInfo.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382011609182" ignored="false" />
+    <file path="/LombokTest.java" changelist="bff9fb56-d14d-48d5-94a8-131451166ab9" time="1382014362471" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +43,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -63,7 +80,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -73,23 +89,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LombokMigrator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/LombokMigrator.java">
+      <file leaf-file-name="ClassOrInterfaceDeclaration.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/javaparser-1.0.8.jar!/japa/parser/ast/body/ClassOrInterfaceDeclaration.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="263" selection-end="277" vertical-scroll-proportion="0.0">
+            <state line="39" column="0" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MigrationLogic.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/MigrationLogic.java">
+      <file leaf-file-name="LinkedList.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar!/java/util/LinkedList.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="62" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.5626072">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#638#654#0" expanded="true" />
-              </folding>
+            <state line="151" column="0" selection-start="4986" selection-end="4986" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,7 +110,63 @@
       <file leaf-file-name="MigrationLogicTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/MigrationLogicTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="8" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
+            <state line="22" column="21" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LombokTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/LombokTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="24" selection-start="539" selection-end="547" vertical-scroll-proportion="0.15120275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericVisitorAdapter.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/javaparser-1.0.8.jar!/japa/parser/ast/visitor/GenericVisitorAdapter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="166" column="0" selection-start="7479" selection-end="7479" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RefactoringInfo.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/RefactoringInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="11" selection-start="565" selection-end="586" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NamePrefixMethodDeclarationRecognizer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/NamePrefixMethodDeclarationRecognizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="20" selection-start="383" selection-end="420" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CombinedAstElementRecognizer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/CombinedAstElementRecognizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="29" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetterElementRecognizer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/GetterElementRecognizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="72" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,16 +203,22 @@
         <option value="$PROJECT_DIR$/src/MigrationLogicTestTest.java" />
         <option value="$PROJECT_DIR$/src/it/polito/softeng/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/it/polito/softeng/LombokMigrator.java" />
+        <option value="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/AstElementRecognizer.java" />
+        <option value="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/NamePrefixMethodDeclarationRecognizer.java" />
+        <option value="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/CombinedAstElementRecognizer.java" />
+        <option value="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/GetterElementRecognizer.java" />
         <option value="$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/MigrationLogicTest.java" />
+        <option value="$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/RefactoringInfo.java" />
         <option value="$PROJECT_DIR$/src/it/polito/softeng/MigrationLogic.java" />
+        <option value="$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/LombokTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1431" />
+    <option name="x" value="1600" />
     <option name="y" value="24" />
-    <option name="width" value="1615" />
-    <option name="height" value="1026" />
+    <option name="width" value="1920" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -237,6 +312,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="softeng" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lombokmigrator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lombok-migrator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lombok-migrator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lombok.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lombok-migrator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lombok-migrator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -250,15 +365,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.project.gradle" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -272,17 +388,23 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.polito.softeng.lombokmigrator" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MigrationLogicTest">
+  <component name="RunManager" selected="JUnit.LombokTest">
     <configuration default="false" name="MigrationLogicTestTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="lombok-migrator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -311,6 +433,28 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="it.polito.softeng.lombokmigrator" />
       <option name="MAIN_CLASS_NAME" value="it.polito.softeng.lombokmigrator.MigrationLogicTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LombokTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="lombok-migrator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="it.polito.softeng.lombokmigrator" />
+      <option name="MAIN_CLASS_NAME" value="it.polito.softeng.lombokmigrator.LombokTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -415,14 +559,16 @@
       <patterns />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.MigrationLogicTestTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.MigrationLogicTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LombokTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MigrationLogicTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MigrationLogicTestTest" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.LombokTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MigrationLogicTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MigrationLogicTestTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -457,7 +603,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1431" y="24" width="1615" height="1026" extended-state="6" />
+    <frame x="1600" y="24" width="1920" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -468,13 +614,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32870865" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23709369" sideWeight="0.6714443" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32855567" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23692636" sideWeight="0.67129135" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -547,19 +693,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/LombokMigrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/MigrationLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="66" selection-start="829" selection-end="829" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#638#654#0" expanded="true" />
+            <element signature="e#931#949#0" expanded="true" />
+            <element signature="e#1073#1090#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -567,7 +707,9 @@
     <entry file="file://$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/MigrationLogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="8" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -575,6 +717,73 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="18" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/AstElementRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/CombinedAstElementRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="29" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/GetterElementRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="72" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-6-openjdk/jre/lib/rt.jar!/java/util/LinkedList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="0" selection-start="4986" selection-end="4986" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javaparser-1.0.8.jar!/japa/parser/ast/visitor/GenericVisitorAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="0" selection-start="7479" selection-end="7479" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javaparser-1.0.8.jar!/japa/parser/ast/body/ClassOrInterfaceDeclaration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/NamePrefixMethodDeclarationRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="383" selection-end="420" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/it/polito/softeng/lombokmigrator/RefactoringInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="11" selection-start="565" selection-end="586" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/MigrationLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="52" selection-start="2858" selection-end="2858" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#931#949#0" expanded="true" />
+            <element signature="e#1073#1090#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -587,25 +796,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/LombokMigrator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="263" selection-end="277" vertical-scroll-proportion="0.0">
+        <state line="59" column="36" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/MigrationLogicTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="8" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="22" column="21" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/polito/softeng/MigrationLogic.java">
+    <entry file="file://$PROJECT_DIR$/test/it/polito/softeng/lombokmigrator/LombokTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="62" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.5626072">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#638#654#0" expanded="true" />
-          </folding>
+        <state line="24" column="24" selection-start="539" selection-end="547" vertical-scroll-proportion="0.15120275">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -686,6 +894,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>javaparser-1.0.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

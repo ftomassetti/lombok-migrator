@@ -6,6 +6,7 @@ import japa.parser.ParseException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 import java.io.IOException;
 
@@ -28,8 +29,15 @@ public class MigrationLogicTest {
     }
 
     @Test
+    public void testGetterRemoval() throws IOException, ParseException {
+        String code = "class A { private String a;\nString getA(){return this.a;}\n}";
+        LombokMigrator lm = new LombokMigrator();
+        assertEquals("class A { @Getter private String a;\n}",lm.migrateCodeToString(code));
+    }
+
+    @Test
     public void testPippo() throws IOException, ParseException {
-        String code = "class A { private String a;\nvoid setA(String a){this.a=a;}\nString getA(){return a;}\n}";
+        String code = "class A { private String a;\nvoid setA(String a){this.a=a;}\nString getA(){return this.a;}\n}";
         LombokMigrator lm = new LombokMigrator();
         lm.migrateCodeToString(code);
     }
