@@ -1,12 +1,11 @@
 package it.polito.softeng;
 
-import it.polito.softeng.it.polito.softeng.lombokmigrator.RefactoringInfo;
+import it.polito.softeng.lombokmigrator.RefactoringInfo;
 import japa.parser.ast.*;
 import japa.parser.ast.body.*;
 import japa.parser.ast.expr.*;
 import japa.parser.ast.stmt.*;
 import japa.parser.ast.type.*;
-import japa.parser.ast.visitor.GenericVisitor;
 import japa.parser.ast.visitor.GenericVisitorAdapter;
 
 import java.util.HashMap;

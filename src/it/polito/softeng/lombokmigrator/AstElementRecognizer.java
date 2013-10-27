@@ -1,4 +1,4 @@
-package it.polito.softeng.it.polito.softeng.lombokmigrator;
+package it.polito.softeng.lombokmigrator;
 
 /**
  * Created with IntelliJ IDEA.

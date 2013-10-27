@@ -1,4 +1,4 @@
-package it.polito.softeng.it.polito.softeng.lombokmigrator;
+package it.polito.softeng.lombokmigrator;
 
 import java.util.LinkedList;
 import java.util.List;

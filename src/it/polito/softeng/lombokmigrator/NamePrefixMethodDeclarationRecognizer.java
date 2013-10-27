@@ -1,10 +1,6 @@
-package it.polito.softeng.it.polito.softeng.lombokmigrator;
+package it.polito.softeng.lombokmigrator;
 
-import japa.parser.ast.*;
 import japa.parser.ast.body.*;
-import japa.parser.ast.expr.*;
-import japa.parser.ast.stmt.*;
-import japa.parser.ast.type.*;
 
 /**
  * Created with IntelliJ IDEA.
