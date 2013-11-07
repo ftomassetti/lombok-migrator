@@ -29,16 +29,23 @@ public class MigrationLogicTest {
     }
 
     @Test
-    public void testGetterRemoval() throws IOException, ParseException {
-        String code = "class A { private String a;\nString getA(){return this.a;}\n}";
+    public void testGetterBooleanRemoval() throws IOException, ParseException {
+        String code = "class A { private boolean a;\nboolean isA(){return this.a;}\n}";
         LombokMigrator lm = new LombokMigrator();
-        assertEquals("class A { @Getter private String a;\n}",lm.migrateCodeToString(code));
+        assertEquals("class A {\n\n    @Getter()\n    private boolean a;\n}\n",lm.migrateCodeToString(code));
     }
 
     @Test
-    public void testPippo() throws IOException, ParseException {
-        String code = "class A { private String a;\nvoid setA(String a){this.a=a;}\nString getA(){return this.a;}\n}";
+    public void testGetterRemoval() throws IOException, ParseException {
+        String code = "class A { private String a;\nString getA(){return this.a;}\n}";
         LombokMigrator lm = new LombokMigrator();
-        lm.migrateCodeToString(code);
+        assertEquals("class A {\n\n    @Getter()\n    private String a;\n}\n",lm.migrateCodeToString(code));
+    }
+
+    @Test
+    public void testSetterRemoval() throws IOException, ParseException {
+        String code = "class A { private String a;\nvoid setA(String a){this.a=a;}\n}";
+        LombokMigrator lm = new LombokMigrator();
+        assertEquals("class A {\n\n    @Setter()\n    private String a;\n}\n",lm.migrateCodeToString(code));
     }
 }

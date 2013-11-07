@@ -73,6 +73,18 @@ public class MigrationLogic {
             fi.fieldDeclaration.getAnnotations().add(getterAnnotation);
         }
 
+        public void addSetterAnnotation(String name){
+            FieldInfo fi = declaredFields.get(name);
+            NormalAnnotationExpr setterAnnotation = new NormalAnnotationExpr();
+            NameExpr setterName = new NameExpr();
+            setterName.setName("Setter");
+            setterAnnotation.setName(setterName);
+            if (fi.fieldDeclaration.getAnnotations()==null){
+                fi.fieldDeclaration.setAnnotations(new LinkedList<AnnotationExpr>());
+            }
+            fi.fieldDeclaration.getAnnotations().add(setterAnnotation);
+        }
+
         public void recordDeleteMember(BodyDeclaration bodyDeclaration){
             this.membersToDelete.add(bodyDeclaration);
         }
@@ -138,6 +150,16 @@ public class MigrationLogic {
         public String fieldNameFromGetter(MethodDeclaration methodDeclaration){
             if (methodDeclaration.getName().startsWith("get")){
                 return methodDeclaration.getName().substring(3,4).toLowerCase()+methodDeclaration.getName().substring(4);
+            } else if (methodDeclaration.getName().startsWith("is")){
+                return methodDeclaration.getName().substring(2,3).toLowerCase()+methodDeclaration.getName().substring(3);
+            }else {
+                return null;
+            }
+        }
+
+        public String fieldNameFromSetter(MethodDeclaration methodDeclaration){
+            if (methodDeclaration.getName().startsWith("set")){
+                return methodDeclaration.getName().substring(3,4).toLowerCase()+methodDeclaration.getName().substring(4);
             } else {
                 return null;
             }
@@ -164,7 +186,8 @@ public class MigrationLogic {
                 currentClass.recordDeleteMember(methodDeclaration);
                 currentClass.addGetterAnnotation(fieldNameFromGetter(methodDeclaration));
             } else if (isASetter(methodDeclaration)){
-
+               currentClass.recordDeleteMember(methodDeclaration);
+                currentClass.addSetterAnnotation(fieldNameFromSetter(methodDeclaration));
             }
             return null;  //To change body of implemented methods use File | Settings | File Templates.
         }
